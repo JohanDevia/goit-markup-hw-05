@@ -55,11 +55,13 @@
               <h1 class="box-h1">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
             </li>
             <li>
-              <a href="./modal.html"
-                ><button class="button-contact box-bc" type="button">
-                  Solicite nuestro servicio
-                </button>
-              </a>
+              ><button
+                data-modal-open
+                class="button-contact box-bc"
+                type="button"
+              >
+                Solicite nuestro servicio
+              </button>
             </li>
           </ul>
         </div>
@@ -473,5 +475,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close>
+          <svg class="x-svg">
+            <use href="./images/images-hw-5/x-close.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
