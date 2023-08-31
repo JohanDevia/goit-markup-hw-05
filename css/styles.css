@@ -453,9 +453,11 @@ svg {
 .contenedor-bg {
   width: 370px;
   height: 404px;
-  border: 1px;
-  border-color: rgba(238, 238, 238, 1);
-  border-style: ridge;
+  border: 1px ridge rgba(238, 238, 238, 1);
+}
+.contenedor-bg:hover {
+  border: 1px ridge;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .box-text {
   padding-left: 24px;
