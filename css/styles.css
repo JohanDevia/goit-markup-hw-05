@@ -582,6 +582,9 @@ svg {
 } */
 /* modal */
 .backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -595,9 +598,9 @@ svg {
   height: 581px;
   background: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 63%;
+  /* top: 63%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 .is-hidden {
   visibility: none;
@@ -605,16 +608,31 @@ svg {
   pointer-events: none;
   transform: scale(-1);
 }
-.button-close {
+.button-container {
+  position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px ridge;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  padding: 8px 8px 0px 490px;
+  right: 8px;
+  top: 8px;
+}
+.button-close {
+  display: flex;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  padding: 0%;
 }
 .x-svg {
   width: 18px;
   height: 18px;
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 1);
 }
